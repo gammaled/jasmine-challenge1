@@ -11,6 +11,10 @@ describe("drink test", function() {
         it("Drink Toddy", function() {
         var result = drinkAbout(13);
         expect(result).toBe("Drink Toddy");
-    });
+        });
+        it("Drink Coke", function() {
+        var result = drinkAbout(17);
+        expect(result).toBe("Drink Coke");
+        });
     });
 }); 
