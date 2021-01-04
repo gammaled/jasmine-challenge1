@@ -8,7 +8,9 @@ drinkAbout = function(age) {
     } else if (age <= 18) {
         return "Drink Coke";
 
-    } else {
+    } else if (age <= 21) {
         return "Drink Beer";
-    }
+    } else {
+        return "Drink Whiskey";
+    };
 };
