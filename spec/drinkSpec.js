@@ -33,4 +33,10 @@ describe("drink test", function() {
         expect(result).toBe("Drink Whiskey");
         });
     });
+    describe("When age is more than 130", function() {
+        it("Sorry. I can’t tell what drink because that age is incorrect!", function() {
+        var result = drinkAbout();
+        expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
+        });
+    });
 }); 
