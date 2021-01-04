@@ -1,5 +1,5 @@
 drinkAbout = function(age) {
-    if (age <= 0 && age > 130) {
+    if (age <= 0 || age > 130) {
     return "Sorry. I can’t tell what drink because that age is incorrect!";
     
     } else if (age <= 14) {
@@ -14,7 +14,10 @@ drinkAbout = function(age) {
     } else if (age <= 130) {
         return "Drink Whiskey";
 
+    } else if (typeof age === 'string'){
+        return "Error!";
+
     } else {
         return "Error!";
-    }
+    };
 };
