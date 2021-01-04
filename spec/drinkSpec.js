@@ -27,4 +27,10 @@ describe("drink test", function() {
         expect(result).toBe("Drink Beer");
         });
     });
+    describe("When age is less than 130", function() {
+        it("Drink Whiskey", function() {
+        var result = drinkAbout(129);
+        expect(result).toBe("Drink Whiskey");
+        });
+    });
 }); 
