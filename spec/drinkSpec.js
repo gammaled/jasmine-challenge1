@@ -40,7 +40,7 @@ describe("drink test", function() {
         });
     });
     describe("When no number is entered", function() {
-        it("Sorry. I can’t tell what drink because that age is incorrect!", function() {
+        it("It should return Error!", function() {
         var result = drinkAbout("string");
         expect(result).toBe("Error!");
         });
