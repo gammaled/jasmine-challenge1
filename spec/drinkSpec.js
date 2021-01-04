@@ -10,25 +10,25 @@ describe("drink test", function() {
         });
     });
     describe("When age is less than 14", function() { 
-        it("Drink Toddy", function() {
+        it("It should return Drink Toddy", function() {
         var result = drinkAbout(13);
         expect(result).toBe("Drink Toddy");
         });
     });
     describe("When age is less than 18", function() { 
-        it("Drink Coke", function() {
+        it("It should return Drink Coke", function() {
         var result = drinkAbout(17);
         expect(result).toBe("Drink Coke");
         });
     });
     describe("When age is less than 21", function() {
-        it("Drink Beer", function() {
+        it("It should return Drink Beer", function() {
         var result = drinkAbout(20);
         expect(result).toBe("Drink Beer");
         });
     });
     describe("When age is less than 130", function() {
-        it("Drink Whiskey", function() {
+        it("It should return Drink Whiskey", function() {
         var result = drinkAbout(129);
         expect(result).toBe("Drink Whiskey");
         });
@@ -37,6 +37,12 @@ describe("drink test", function() {
         it("Sorry. I can’t tell what drink because that age is incorrect!", function() {
         var result = drinkAbout();
         expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
+        });
+    });
+    describe("When no number is entered", function() {
+        it("Sorry. I can’t tell what drink because that age is incorrect!", function() {
+        var result = drinkAbout("string");
+        expect(result).toBe("Error!");
         });
     });
 }); 
