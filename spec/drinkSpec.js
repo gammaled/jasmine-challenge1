@@ -16,5 +16,9 @@ describe("drink test", function() {
         var result = drinkAbout(17);
         expect(result).toBe("Drink Coke");
         });
+        it("Drink Whisky", function() {
+        var result = drinkAbout(20);
+        expect(result).toBe("Drink Whisky");
+        });
     });
 }); 
