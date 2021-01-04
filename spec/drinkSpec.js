@@ -41,7 +41,7 @@ describe("drink test", function() {
     });
     describe("When no number is entered", function() {
         it("It should return Error!", function() {
-        var result = drinkAbout("string");
+        var result = drinkAbout(typeof age === 'string');
         expect(result).toBe("Error!");
         });
     });
