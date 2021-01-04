@@ -35,13 +35,13 @@ describe("drink test", function() {
     });
     describe("When age is more than 130", function() {
         it("Sorry. I can’t tell what drink because that age is incorrect!", function() {
-        var result = drinkAbout();
+        var result = drinkAbout(131);
         expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
         });
     });
     describe("When no number is entered", function() {
         it("It should return Error!", function() {
-        var result = drinkAbout(typeof age === 'string');
+        var result = drinkAbout('string');
         expect(result).toBe("Error!");
         });
     });
